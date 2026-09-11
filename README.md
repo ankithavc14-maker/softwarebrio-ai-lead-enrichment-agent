@@ -86,39 +86,61 @@
 
 # \- Estimated cost
 
-# 
-
 # \## Architecture
 
 # 
 
-# The agent follows a modular pipeline that transforms public company web content into validated structured intelligence.
+# The agent follows a modular pipeline from company domains to structured company intelligence.
 
 # 
 
-# ```mermaid
+# | Step | Component | Responsibility |
 
-# flowchart LR
+# |---|---|---|
 
-# &#x20;   A\["Company Domains<br/>domains.json"] --> B\["Playwright Crawler<br/>Dynamic Web Browsing"]
+# | \*\*1\*\* | 📋 Company Domains | Reads target domains from `domains.json` |
 
-# &#x20;   B --> C\["HTML Cleaning<br/>Remove Scripts, Styles, SVG \& Noise"]
+# | ↓ | | |
 
-# &#x20;   C --> D\["Evidence Preprocessing<br/>Relevant Text \& Token Limits"]
+# | \*\*2\*\* | 🌐 Playwright Crawler | Browses public pages and handles JavaScript-rendered content |
 
-# &#x20;   D --> E\["Groq LLM<br/>Structured Extraction"]
+# | ↓ | | |
 
-# &#x20;   E --> F\["Pydantic Validation<br/>Schema \& Data Validation"]
+# | \*\*3\*\* | 🧹 HTML Cleaning | Removes scripts, styles, SVGs, navigation and irrelevant content |
 
-# &#x20;   F --> G\["Structured JSON<br/>output.json"]
+# | ↓ | | |
+
+# | \*\*4\*\* | 📝 Evidence Preprocessing | Selects relevant text and applies token limits |
+
+# | ↓ | | |
+
+# | \*\*5\*\* | ⚡ Groq LLM | Extracts company intelligence using structured output |
+
+# | ↓ | | |
+
+# | \*\*6\*\* | 🛡️ Pydantic Validation | Validates the response against the defined schema |
+
+# | ↓ | | |
+
+# | \*\*7\*\* | 📦 Structured JSON | Produces the final enrichment results |
 
 # 
 
-# &#x20;   B -.-> H\["Retries \& Timeouts"]
-
-# &#x20;   H -.-> B
+# \### Data Flow
 
 # 
 
-# &#x20;   D -.-> I\["Optional Tavily Search<br/>LinkedIn Discovery"]
+# ```text
+
+# postman.com ─┐
+
+# supabase.com ├──→ Playwright → Clean Text → Evidence → Groq LLM
+
+# vapi.ai ─────┘                                      ↓
+
+# &#x20;                                           Pydantic Validation
+
+# &#x20;                                                    ↓
+
+# &#x20;                                               output.json
 
