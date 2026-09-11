@@ -2,113 +2,76 @@
   {
     "domain": "postman.com",
     "status": "success",
-    "company_overview": "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.",
-    "target_audience_icp": "Engineers and developers building APIs, especially enterprise teams seeking scalable API lifecycle management.",
+    "company_overview": "Postman is an AI-native API platform that lets engineers develop, test, manage, and distribute APIs and services. It is designed for enterprise scale.",
+    "target_audience_icp": "Software engineers and developers building APIs",
     "contact_emails": [
-      "info-jp@postman.com",
-      "info@postman.com"
+      "info@postman.com",
+      "info-jp@postman.com"
     ],
-    "leadership_team": [
-      {
-        "name": "Abhinav Asthana",
-        "role": "CEO and co-founder",
-        "linkedin_url": "https://www.linkedin.com/in/abhinavasthana"
-      },
-      {
-        "name": "Ankit Sobti",
-        "role": "Co-founder",
-        "linkedin_url": "https://www.linkedin.com/in/ankit-sobti"
-      }
-    ],
-    "linkedin_urls": [
-      "https://www.linkedin.com/company/postman-platform",
-      "https://www.linkedin.com/company/postman-platform/",
-      "https://www.linkedin.com/in/abhinavasthana",
-      "https://www.linkedin.com/in/ankit-sobti"
-    ],
-    "data_confidence_score": 0.9,
+    "leadership_team": [],
+    "linkedin_urls": [],
+    "data_confidence_score": 0.8,
     "source_pages": [
       "https://www.postman.com/",
       "https://www.postman.com/company/careers/",
       "https://www.postman.com/company/contact-us/",
-      "https://www.postman.com/company/press-media/",
-      "https://www.postman.com/company/press-media/",
-      "https://www.postman.com/company/press-media/",
-      "https://www.postman.com/company/about-postman/"
+      "https://www.postman.com/company/press-media/"
     ],
     "extraction_notes": [
-      "Extraction is grounded in cleaned public webpage evidence.",
-      "Raw HTML, scripts, styles and SVG content are excluded from the LLM context.",
-      "Groq was used for structured LLM extraction."
+      "Leadership team information not found in the provided evidence."
     ],
-    "tokens_input": 4438,
-    "tokens_output": 981,
+    "tokens_input": 7125,
+    "tokens_output": 635,
     "estimated_cost_usd": 0.0
   },
   {
     "domain": "supabase.com",
     "status": "success",
-    "company_overview": "Supabase is a Postgres-based development platform that provides built‑in authentication, real‑time data, storage, REST APIs, and edge functions. It is built by developers for developers and offers a fully managed, open‑source alternative to Firebase.",
-    "target_audience_icp": "Developers building web, mobile, or SaaS applications who need a managed Postgres backend with auth, realtime, storage, and API features.",
-    "contact_emails": [
-      "abuse@supabase.com",
-      "help-events@supabase.com",
-      "legal@supabase.com",
-      "privacy@supabase.com",
-      "security@supabase.com"
-    ],
+    "company_overview": "Supabase is a Postgres-based development platform that provides authentication, real-time data, storage, RESTful APIs, and edge functions. It is built by developers for developers and serves as an open-source alternative to Firebase.",
+    "target_audience_icp": "Developers building web and mobile applications, especially startups and SaaS companies looking for a scalable backend.",
+    "contact_emails": [],
     "leadership_team": [],
-    "linkedin_urls": [
-      "https://www.linkedin.com/company/supabase"
-    ],
-    "data_confidence_score": 0.9,
+    "linkedin_urls": [],
+    "data_confidence_score": 0.6,
     "source_pages": [
       "https://supabase.com/",
       "https://supabase.com/pricing",
-      "https://supabase.com/pricing",
       "https://supabase.com/company",
-      "https://supabase.com/careers",
-      "https://supabase.com/contact-us",
-      "https://supabase.com/contact/sales"
+      "https://supabase.com/careers"
     ],
     "extraction_notes": [
-      "Extraction is grounded in cleaned public webpage evidence.",
-      "Raw HTML, scripts, styles and SVG content are excluded from the LLM context.",
-      "Groq was used for structured LLM extraction."
+      "No public contact emails found in the evidence.",
+      "No leadership or team member details were present in the provided sources.",
+      "No LinkedIn URLs were identified."
     ],
-    "tokens_input": 4996,
-    "tokens_output": 780,
+    "tokens_input": 7112,
+    "tokens_output": 736,
     "estimated_cost_usd": 0.0
   },
   {
     "domain": "vapi.ai",
     "status": "success",
-    "company_overview": "Vapi is an open voice agent platform that enables developers to build, deploy, and iterate voice AI agents rapidly. It offers enterprise‑grade scalability, compliance, and real‑time monitoring for high‑volume call centers.",
-    "target_audience_icp": "Enterprise‑level customer support, sales, and lead qualification teams that need scalable, compliant voice AI agents.",
+    "company_overview": "Vapi builds a unified platform that lets developers create, deploy, and manage voice agents quickly. The platform offers enterprise‑grade scalability, compliance, and real‑time monitoring for voice AI applications.",
+    "target_audience_icp": "Enterprise teams and developers building voice AI solutions for customer support, lead qualification, and other conversational use cases.",
     "contact_emails": [
-      "support@vapi.ai",
-      "talent@vapi.ai"
+      "talent@vapi.ai",
+      "support@vapi.ai"
     ],
     "leadership_team": [],
-    "linkedin_urls": [
-      "https://www.linkedin.com/company/vapi-ai"
-    ],
-    "data_confidence_score": 0.9,
+    "linkedin_urls": [],
+    "data_confidence_score": 0.7,
     "source_pages": [
       "https://vapi.ai/",
-      "https://vapi.ai/pricing",
-      "https://vapi.ai/careers",
+      "https://vapi.ai/sales",
       "https://vapi.ai/pricing",
       "https://vapi.ai/careers",
       "https://docs.vapi.ai/support"
     ],
     "extraction_notes": [
-      "Extraction is grounded in cleaned public webpage evidence.",
-      "Raw HTML, scripts, styles and SVG content are excluded from the LLM context.",
-      "Groq was used for structured LLM extraction."
+      "Leadership team information is incomplete; only VP of Software Development (Jason Mitura) is mentioned but no LinkedIn URL is provided, so the leadership team array is left empty. Contact emails are limited to talent@vapi.ai and support@vapi.ai as the only publicly listed addresses."
     ],
-    "tokens_input": 2949,
-    "tokens_output": 702,
+    "tokens_input": 5343,
+    "tokens_output": 1044,
     "estimated_cost_usd": 0.0
   }
 ]
