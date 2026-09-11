@@ -92,71 +92,33 @@
 
 # 
 
-# ```text
+# The agent follows a modular pipeline that transforms public company web content into validated structured intelligence.
 
-# Company Domains
+# 
 
-# &#x20;     |
+# ```mermaid
 
-# &#x20;     v
+# flowchart LR
 
-# +------------------+
+# &#x20;   A\["Company Domains<br/>domains.json"] --> B\["Playwright Crawler<br/>Dynamic Web Browsing"]
 
-# | Playwright Crawler|
+# &#x20;   B --> C\["HTML Cleaning<br/>Remove Scripts, Styles, SVG \& Noise"]
 
-# +------------------+
+# &#x20;   C --> D\["Evidence Preprocessing<br/>Relevant Text \& Token Limits"]
 
-# &#x20;     |
+# &#x20;   D --> E\["Groq LLM<br/>Structured Extraction"]
 
-# &#x20;     v
+# &#x20;   E --> F\["Pydantic Validation<br/>Schema \& Data Validation"]
 
-# +------------------+
+# &#x20;   F --> G\["Structured JSON<br/>output.json"]
 
-# | HTML Cleaning    |
+# 
 
-# | \& Text Extraction|
+# &#x20;   B -.-> H\["Retries \& Timeouts"]
 
-# +------------------+
+# &#x20;   H -.-> B
 
-# &#x20;     |
+# 
 
-# &#x20;     v
-
-# +------------------+
-
-# | Evidence          |
-
-# | Preprocessing     |
-
-# +------------------+
-
-# &#x20;     |
-
-# &#x20;     v
-
-# +------------------+
-
-# | Groq LLM          |
-
-# | Structured JSON   |
-
-# +------------------+
-
-# &#x20;     |
-
-# &#x20;     v
-
-# +------------------+
-
-# | Pydantic          |
-
-# | Validation        |
-
-# +------------------+
-
-# &#x20;     |
-
-# &#x20;     v
-
-# &#x20;  output.json
+# &#x20;   D -.-> I\["Optional Tavily Search<br/>LinkedIn Discovery"]
 
