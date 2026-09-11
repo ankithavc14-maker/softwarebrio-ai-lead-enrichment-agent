@@ -1,0 +1,31 @@
+Subject: [AI Intern Submission] - Ankitha V Chandan
+
+Hello SoftwareBrio Team,
+
+Please find my submission for the AI Engineer Intern take-home assignment.
+
+GitHub Repository:
+[PASTE YOUR GITHUB REPOSITORY LINK]
+
+LinkedIn:
+[PASTE YOUR LINKEDIN PROFILE]
+
+Loom Walkthrough:
+[PASTE YOUR LOOM LINK]
+
+Operations Question:
+Yes. I am 100% comfortable spending roughly 40% of my working hours on
+manual lead prospecting, email discovery, and account handling alongside
+my AI engineering tasks.
+
+The repository includes:
+- Python autonomous lead-enrichment agent
+- Playwright-based browser automation
+- Clean DOM/text preprocessing
+- Pydantic structured outputs
+- Error handling and resilience
+- Sample output
+- Setup and execution documentation
+
+Regards,
+Ankitha V Chandan

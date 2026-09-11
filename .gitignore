@@ -1,0 +1,8 @@
+.env
+.env.txt
+output.json
+output_check.txt
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
